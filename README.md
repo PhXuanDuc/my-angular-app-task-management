@@ -35,5 +35,10 @@ This project was developed to practice frontend development with Angular, includ
 ```bash
 npm install
 ng serve
-
+```
 open : http://localhost:4200
+
+## Images after project completion
+
+<img width="1519" height="869" alt="image" src="https://github.com/user-attachments/assets/98feaf16-a5ff-4882-a44e-3a37eb67ce83" />
+
