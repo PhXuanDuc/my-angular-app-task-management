@@ -1,0 +1,23 @@
+<div class="task-container">
+  <app-task-form (add)="addTask($event)"></app-task-form>
+
+  <div class="filter-buttons">
+    <button (click)="applyFilter('All')">All</button>
+    <button (click)="applyFilter('Todo')">Todo</button>
+    <button (click)="applyFilter('In Progress')">In Progress</button>
+    <button (click)="applyFilter('Done')">Done</button>
+  </div>
+
+  <div *ngIf="filteredTasks.length === 0" class="empty-state">
+    No tasks found.
+  </div>
+
+  <div class="task-list">
+    <app-task-item
+      *ngFor="let task of filteredTasks"
+      [task]="task"
+      (delete)="deleteTask($event)"
+      (statusChange)="updateTask($event)">
+    </app-task-item>
+  </div>
+</div>

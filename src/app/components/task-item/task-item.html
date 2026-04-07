@@ -1,0 +1,24 @@
+<div class="task-card">
+  <h3>{{ task.title }}</h3>
+  <p>{{ task.description }}</p>
+
+  <span
+    class="status"
+    [ngClass]="{
+      'todo': task.status === 'Todo',
+      'progress': task.status === 'In Progress',
+      'done': task.status === 'Done'
+    }"
+  >
+    {{ task.status }}
+  </span>
+
+  <p><small>{{ task.createdAt }}</small></p>
+
+  <div class="actions">
+    <button class="btn-todo" (click)="changeStatus('Todo')">Todo</button>
+    <button class="btn-progress" (click)="changeStatus('In Progress')">In Progress</button>
+    <button class="btn-done" (click)="changeStatus('Done')">Done</button>
+    <button class="btn-delete" (click)="onDelete()">Delete</button>
+  </div>
+</div>

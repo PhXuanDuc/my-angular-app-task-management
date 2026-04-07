@@ -1,0 +1,76 @@
+.task-form {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.task-form h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #374151;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 6px;
+  display: block;
+}
